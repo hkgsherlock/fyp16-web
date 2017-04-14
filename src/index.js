@@ -8,7 +8,7 @@ import Router, {Route, IndexRoute, hashHistory} from 'react-router';
 
 import App from './components/App'
 // import RouterContainer from './services/RouterContainer';
-import LoginActions from './actions/LoginActions';
+// import LoginActions from './actions/LoginActions';
 
 import Login from './pages/Login';
 import Settings from './pages/Settings';
@@ -24,9 +24,9 @@ import NotFound from './pages/404';
 // }
 
 ReactDOM.render(
-    //  history={ hashHistory }
-    <Router>
-        <Route path='/' component={ Login }>
+    //
+    <Router history={ hashHistory } >
+        <Route path='/' component={ Login } >
             {/*<IndexRoute component={ Login }/>*/}
             {/*<Route path='/login' component={Login}/>*/}
             {/*<IndexRoute component={Portal}/>*/}
