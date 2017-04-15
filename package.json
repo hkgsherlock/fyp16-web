@@ -2,22 +2,22 @@
   "name": "react-browserify-spa-seed",
   "version": "0.0.1",
   "private": true,
-  "description": "",
   "main": "index.js",
-  "authors": [
-    "Martin Gontovnikas <martin@gon.to> (http://gon.to/)"
-  ],
-  "homepage": "https://github.com/mgonto/react-browserify-spa-seed",
   "dependencies": {
     "flux": "^2.0.1",
     "jwt-decode": "^1.1.0",
     "react": "^15.4.1",
+    "react-document-title": "^2.0.3",
     "react-dom": "^15.4.1",
+    "react-layout-components": "^3.0.4",
     "react-mixin": "^1.1.0",
-    "react-router": "^0.13.2",
+    "react-responsive": "^1.2.7",
+    "react-router": "^3.0.2",
     "react-semantic-ui": "^0.2.0",
+    "react-toastr": "^2.8.2",
     "reqwest": "^1.1.5",
     "semantic-ui-react": "^0.67.2",
+    "velocity-react": "^1.2.1",
     "when": "^3.7.2"
   },
   "devDependencies": {
