@@ -10,12 +10,15 @@ class SetReboot extends Component {
         }
     }
 
-    reboot() {
-
+    reboot(e) {
+        e.preventDefault();
     }
 
     render() {
-        const handlePromptConfirm = (e) => this.setState({confirming: !this.state.confirming});
+        const handlePromptConfirm = (e) => {
+            e.preventDefault();
+            this.setState({confirming: !this.state.confirming})
+        };
         const handleConfirmClick = this.reboot.bind(this);
 
         return (
@@ -42,8 +45,17 @@ class SetReboot extends Component {
                             <p>
                                 Click the following button to reboot. This process takes about 2 minutes.
                             </p>
-                            <Button color='Black' icon='repeat' content="Reboot" onClick={ handlePromptConfirm } />
+                            <Button
+                                color='Black'
+                                icon='repeat'
+                                content="Reboot"
+                                onClick={ handlePromptConfirm }
+                                disabled={this.state.confirming}
+                            />
                             <Confirm
+                                header='You clicked to request reboot.'
+                                content='Do you really want to reboot? This action cannot be undone.'
+                                confirmButton="Reboot"
                                 open={ this.state.confirming }
                                 onConfirm={ handleConfirmClick }
                                 onCancel={ handlePromptConfirm }

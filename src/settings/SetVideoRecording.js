@@ -2,36 +2,72 @@ import React, {Component} from 'react'
 import {Breadcrumb, Button, Form, Header, Input, Message, Segment} from "semantic-ui-react";
 import {Link} from "react-router";
 
-class SetDropbox extends Component {
-    constructor() {
-        super();
-        this.state = {
-            saving: false,
-            lastSaveResult: null,
-            lastSaveReason: null
+class SetVideoRecording extends Component {
+    state = {
+        loading: false,
+        saving: false,
+        lastSaveResult: null,
+        lastSaveReason: null,
+        record_width: '',
+        record_height: '',
+        record_framerate: ''
+    }
+
+    componentDidMount() {
+        this.reloadSet();
+    }
+
+    async reloadSet() {
+        this.setState({loading: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/set/record');
+        let json = await result.json();
+        this.setState({loading: false});
+        if (result.ok) {
+            this.setState({
+                record_width: json.record_width,
+                record_height: json.record_height,
+                record_framerate: json.record_framerate
+            });
+        } else {
         }
     }
 
-    save() {
-        this.setState({
-            saving: true,
-            lastSaveResult: null,
-            lastSaveReason: null
-        });
-
-        setTimeout(() => {
-            this.setState({
-                saving: false,
-                lastSaveResult: true
+    async save() {
+        this.setState({saving: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/set/record', {
+            method: 'POST',
+            body: JSON.stringify({
+                record_width: this.state.record_width,
+                record_height: this.state.record_height,
+                record_framerate: this.state.record_framerate
             })
-        }, 3000);
+        });
+        let json = await result.json();
+        this.setState({
+            saving: false,
+            lastSaveResult: result.ok
+        });
+        if (!result.ok) {
+            this.setState({
+                lastSaveReason: json.message
+            })
+        }
+    }
+
+    handleChange(field, e) {
+        this.setState({[field]: e.target.value})
     }
 
     render() {
+        const handleRecordWidthChange = (e) => this.handleChange('record_width', e);
+        const handleRecordHeightChange = (e) => this.handleChange('record_height', e);
+        const handleRecordFrameRateChange = (e) => this.handleChange('record_framerate', e);
         const handleSaveBtnClick = this.save.bind(this);
 
         return (
-            <Segment basic>
+            <Segment basic loading={this.state.loading}>
                 <Breadcrumb size='big'>
                     <Breadcrumb.Section>
                         <Link to="/settings">
@@ -71,15 +107,21 @@ class SetDropbox extends Component {
                         </Header>
                         <Form.Field>
                             <label>Width</label>
-                            <Input placeholder='Width, in integer'/>
+                            <Input placeholder='Width, in integer'
+                                   value={this.state.record_width}
+                                   onChange={handleRecordWidthChange}/>
                         </Form.Field>
                         <Form.Field>
                             <label>Height</label>
-                            <Input placeholder='Height, in integer'/>
+                            <Input placeholder='Height, in integer'
+                                   value={this.state.record_height}
+                                   onChange={handleRecordHeightChange}/>
                         </Form.Field>
                         <Form.Field>
                             <label>Frame Rate</label>
-                            <Input placeholder='Frame rate, in integer or decimal'/>
+                            <Input placeholder='Frame rate, in integer or decimal'
+                                   value={this.state.record_framerate}
+                                   onChange={handleRecordFrameRateChange}/>
                         </Form.Field>
                     </Form>
                 </Segment>
@@ -88,4 +130,4 @@ class SetDropbox extends Component {
     }
 }
 
-export default SetDropbox;
+export default SetVideoRecording;

@@ -3,35 +3,62 @@ import {Breadcrumb, Button, Dropdown, Form, Message, Segment} from "semantic-ui-
 import {Link} from "react-router";
 
 class SetFaceDetection extends Component {
-    constructor() {
-        super();
-        this.state = {
+    state = {
+        loading: false,
+        saving: false,
+        face_method: ''
+    }
+
+    componentDidMount() {
+        this.reloadSet();
+    }
+
+    async reloadSet() {
+        this.setState({loading: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/set/face');
+        let json = await result.json();
+        this.setState({loading: false});
+        if (result.ok) {
+            this.setState({
+                face_method: json.face_method
+            });
+        } else {
+        }
+        this.refs.method_dropdown.setValue(json.face_method);
+    }
+
+    async save() {
+        this.setState({saving: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/set/face', {
+            method: 'POST',
+            body: JSON.stringify({
+                face_method: this.state.face_method
+            })
+        });
+        let json = await result.json();
+        this.setState({
             saving: false,
-            lastSaveResult: null,
-            lastSaveReason: null
+            lastSaveResult: result.ok
+        });
+        if (!result.ok) {
+            this.setState({
+                lastSaveReason: json.message
+            })
         }
     }
 
-    save() {
-        this.setState({
-            saving: true,
-            lastSaveResult: null,
-            lastSaveReason: null
-        });
-
-        setTimeout(() => {
-            this.setState({
-                saving: false,
-                lastSaveResult: true
-            })
-        }, 3000);
+    handleChange(field, e) {
+        this.setState({[field]: e.target.value})
     }
 
     render() {
+        const handleFaceMethodChange = (e, {value}) => this.setState({'face_method': value});
         const handleSaveBtnClick = this.save.bind(this);
 
         return (
-            <Segment basic>
+            <Segment basic loading={this.state.loading}>
                 <Breadcrumb size='big'>
                     <Breadcrumb.Section>
                         <Link to="/settings">
@@ -69,22 +96,34 @@ class SetFaceDetection extends Component {
                         <Form.Field>
                             <label>Method</label>
                             <p>
-                                Select the method
+                                Select the method for face detection. <br/>
+                                Default set to use "DLib HOG" one as it provides a more accurate result.
                             </p>
-                            <Dropdown defaultValue='FaceCascadingDlib' placeholder='Select Friend' fluid selection options={[
-                                {
-                                    text: 'OpenCV Haar Cascading',
-                                    value: 'FaceCascadingOpencvHaar'
-                                },
-                                {
-                                    text: 'OpenCV Local Binary Pattern Cascading',
-                                    value: 'FaceCascadingOpencvLbp'
-                                },
-                                {
-                                    text: 'DLib HOG Face Cascading',
-                                    value: 'FaceCascadingDlib'
-                                }
-                            ]} />
+                            <Dropdown
+                                ref="method_dropdown"
+                                defaultValue={this.state.face_method}
+                                placeholder='Select Method'
+                                fluid
+                                selection
+                                options={[
+                                    {
+                                        text: 'OpenCV Haar Cascading',
+                                        key: 'FaceCascadingOpencvHaar',
+                                        value: 'FaceCascadingOpencvHaar'
+                                    },
+                                    {
+                                        text: 'OpenCV Local Binary Pattern Cascading',
+                                        key: 'FaceCascadingOpencvLbp',
+                                        value: 'FaceCascadingOpencvLbp'
+                                    },
+                                    {
+                                        text: 'DLib HOG Face Cascading',
+                                        key: 'FaceCascadingDlib',
+                                        value: 'FaceCascadingDlib'
+                                    }
+                                ]}
+                                onChange={handleFaceMethodChange}
+                            />
                         </Form.Field>
                     </Form>
                 </Segment>

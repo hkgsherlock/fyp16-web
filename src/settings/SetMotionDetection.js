@@ -3,35 +3,75 @@ import {Breadcrumb, Button, Form, Input, Message, Segment} from "semantic-ui-rea
 import {Link} from "react-router";
 
 class SetMotionDetection extends Component {
-    constructor() {
-        super();
-        this.state = {
-            saving: false,
-            lastSaveResult: null,
-            lastSaveReason: null
+    state = {
+        loading: false,
+        saving: false,
+        lastSaveResult: null,
+        lastSaveReason: null,
+        threshold_low: '',
+        minimum_area: '',
+        bounding_box_padding: '',
+        frame_span: ''
+    }
+
+    componentDidMount() {
+        this.reloadSet();
+    }
+
+    async reloadSet() {
+        this.setState({loading: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/set/motion');
+        let json = await result.json();
+        this.setState({loading: false});
+        if (result.ok) {
+            this.setState({
+                threshold_low: json.threshold_low,
+                minimum_area: json.minimum_area,
+                bounding_box_padding: json.bounding_box_padding,
+                frame_span: json.frame_span
+            });
+        } else {
         }
     }
 
-    save() {
-        this.setState({
-            saving: true,
-            lastSaveResult: null,
-            lastSaveReason: null
-        });
-
-        setTimeout(() => {
-            this.setState({
-                saving: false,
-                lastSaveResult: true
+    async save() {
+        this.setState({saving: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/set/motion', {
+            method: 'POST',
+            body: JSON.stringify({
+                threshold_low: this.state.threshold_low,
+                minimum_area: this.state.minimum_area,
+                bounding_box_padding: this.state.bounding_box_padding,
+                frame_span: this.state.frame_span
             })
-        }, 3000);
+        });
+        let json = await result.json();
+        this.setState({
+            saving: false,
+            lastSaveResult: result.ok
+        });
+        if (!result.ok) {
+            this.setState({
+                lastSaveReason: json.message
+            })
+        }
+    }
+
+    handleChange(field, e) {
+        this.setState({[field]: e.target.value})
     }
 
     render() {
+        const handleThresholdLowChange = (e) => this.handleChange('threshold_low', e);
+        const handleMinimumAreaChange = (e) => this.handleChange('minimum_area', e);
+        const handleBoundingBoxPaddingChange = (e) => this.handleChange('bounding_box_padding', e);
+        const handleFrameSpanChange = (e) => this.handleChange('frame_span', e);
         const handleSaveBtnClick = this.save.bind(this);
 
         return (
-            <Segment basic>
+            <Segment basic loading={this.state.loading}>
                 <Breadcrumb size='big'>
                     <Breadcrumb.Section>
                         <Link to="/settings">
@@ -73,37 +113,45 @@ class SetMotionDetection extends Component {
                                 and frame to be compared has lower difference than this value, the pixel is meant to be
                                 no change.
                             </p>
-                            <Input placeholder='Grayscale color value (0-255) in integer'/>
+                            <Input placeholder='Grayscale color value (0-255) in integer'
+                                   value={this.state.threshold_low}
+                                   onChange={handleThresholdLowChange}/>
                         </Form.Field>
-                        <Form.Field>
-                            <label>Threshold High</label>
-                            <p>
-                                The higher value for threshold, which means if the pixel difference of frame comparing
-                                and frame to be compared has higher difference than this value, the pixel is meant to be
-                                changed.
-                            </p>
-                            <Input placeholder='Grayscale color value (0-255) in integer'/>
-                        </Form.Field>
+                        {/*<Form.Field>*/}
+                        {/*<label>Threshold High</label>*/}
+                        {/*<p>*/}
+                        {/*The higher value for threshold, which means if the pixel difference of frame comparing*/}
+                        {/*and frame to be compared has higher difference than this value, the pixel is meant to be*/}
+                        {/*changed.*/}
+                        {/*</p>*/}
+                        {/*<Input placeholder='Grayscale color value (0-255) in integer'/>*/}
+                        {/*</Form.Field>*/}
                         <Form.Field>
                             <label>Minimun Area Size</label>
                             <p>
                                 Minimum size of area in pixels that the detection reports changes.
                             </p>
-                            <Input placeholder='Frame rate, in integer or decimal'/>
+                            <Input placeholder='Number of pixels, in integer'
+                                   value={this.state.minimum_area}
+                                   onChange={handleMinimumAreaChange}/>
                         </Form.Field>
                         <Form.Field>
                             <label>Bounding Box Padding</label>
                             <p>
                                 Extra spaces for detected changes.
                             </p>
-                            <Input placeholder='Width, in integer'/>
+                            <Input placeholder='Length of pixels, in integer'
+                                   value={this.state.bounding_box_padding}
+                                   onChange={handleBoundingBoxPaddingChange}/>
                         </Form.Field>
                         <Form.Field>
                             <label>Frame Span</label>
                             <p>
                                 By how many frames earlier to select to compare with current frame.
                             </p>
-                            <Input placeholder='Height, in integer'/>
+                            <Input placeholder='Number of frames, in integer'
+                                   value={this.state.frame_span}
+                                   onChange={handleFrameSpanChange}/>
                         </Form.Field>
                     </Form>
                 </Segment>

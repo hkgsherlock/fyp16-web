@@ -1,9 +1,10 @@
 import React, {PureComponent} from "react";
 import {Button, Grid, Header, Icon, Menu, Segment} from "semantic-ui-react";
-import {Link} from "react-router";
+import {Link, browserHistory} from "react-router";
 import DocumentTitle from 'react-document-title'
 import {VelocityTransitionGroup} from "velocity-react";
 import MediaQuery from 'react-responsive'
+import storage from '../storage'
 
 // import {ToastContainer, ToastMessage} from 'react-toastr'
 // const ToastMessageFactory = React.createFactory(ToastMessage.animation);
@@ -41,19 +42,17 @@ class App extends PureComponent {
         };
     }
 
-    componentWillMount() {
-
+    componentDidMount() {
+        if (!storage.getItem('uinfo') || storage.getItem('uinfo') === 'null') {
+            browserHistory.replace('/login');
+        }
     }
 
     render() {
         const handleMenuBtnClick = (e) => this.setState({showMenu: !this.state.showMenu});
         return (
             <DocumentTitle title="PiSmartCamera">
-                {/*<ToastContainer ref="container"*/}
-                {/*toastMessageFactory={ToastMessageFactory}*/}
-                {/*className="toast-top-right"/>*/}
-
-                <Grid textAlign='center' style={{marginTop: '1em'}}>
+                <Grid textAlign='center' style={{paddingTop: '1em'}}>
                     <Grid.Column computer={12} tablet={14} mobile={16} textAlign='left'>
                         <Header as='h1'>
                             <Icon name='video camera'/>
@@ -64,7 +63,7 @@ class App extends PureComponent {
                                 </Header.Subheader>
                             </Header.Content>
                         </Header>
-                        <MediaQuery maxDeviceWidth={767}>
+                        <MediaQuery maxDeviceWidth={1224}>
                             <Button icon="bars" content="Menu" attached='top' fluid
                                     active={ this.state.showMenu }
                                     onClick={ handleMenuBtnClick }>
@@ -79,7 +78,7 @@ class App extends PureComponent {
                                 {this.state.showMenu ? this.myMenu : null}
                             </VelocityTransitionGroup>
                         </MediaQuery>
-                        <MediaQuery minDeviceWidth={767}>
+                        <MediaQuery minDeviceWidth={1224}>
                             { this.myMenu }
                         </MediaQuery>
                         <Segment attached='bottom'>

@@ -3,9 +3,43 @@ import {Breadcrumb, Header, Progress, Segment, Statistic} from "semantic-ui-reac
 import {Link} from "react-router";
 
 class SetDiskSpace extends Component {
+    state = {
+        loading: false,
+        unit: 'MB',
+        total: '...',
+        used: '...',
+        available: '...',
+        use_percent: '...',
+        disks: []
+    };
+
+    componentDidMount() {
+        this.reloadStat();
+    }
+
+    async reloadStat() {
+        this.setState({loading: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/diskusage');
+        let json = await result.json();
+        this.setState({loading: false});
+        if (result.ok) {
+            this.setState({
+                unit: json.unit,
+                total: json.total,
+                used: json.used,
+                available: json.available,
+                use_percent: json.use_percent,
+                disks: json.disks
+            });
+        } else {
+        }
+    }
+
     render() {
+        const unit = this.state.unit;
         return (
-            <Segment basic>
+            <Segment basic loading={this.state.loading}>
                 <Breadcrumb size='big'>
                     <Breadcrumb.Section>
                         <Link to="/settings">
@@ -26,41 +60,33 @@ class SetDiskSpace extends Component {
                         Total disk usage
                     </Header>
                     <Statistic.Group widths={4} size="small">
-                        <Statistic label='Total GB' value='29.07' />
-                        <Statistic label='Used' value='4.79' />
-                        <Statistic label='Available' value='22.93' />
-                        <Statistic label='Used %' value='18%' />
+                        <Statistic label={ 'Total ' + unit } value={this.state.total} />
+                        <Statistic label='Used' value={this.state.used} />
+                        <Statistic label='Available' value={this.state.available} />
+                        <Statistic label='Used %' value={this.state.use_percent} />
                     </Statistic.Group>
                     <Segment.Group>
-                        <Segment>
-                            <Header as="h3">
-                                <code>
-                                    /dev/root
-                                </code>
-                            </Header>
-                            <Progress progress percent={18} />
-                            <Statistic.Group widths={4} size="small">
-                                <Statistic label='Total GB' value='29.04' />
-                                <Statistic label='Used' value='4.77' />
-                                <Statistic label='Available' value='22.89' />
-                                <Statistic label='Used %' value='18%' />
-                            </Statistic.Group>
-                        </Segment>
-
-                        <Segment>
-                            <Header as="h3">
-                                <code>
-                                    /dev/mmcblk0p1
-                                </code>
-                            </Header>
-                            <Progress progress percent={34} />
-                            <Statistic.Group widths={4} size="small">
-                                <Statistic label='Total GB' value='63' />
-                                <Statistic label='Used' value='21' />
-                                <Statistic label='Available' value='42' />
-                                <Statistic label='Used %' value='34%' />
-                            </Statistic.Group>
-                        </Segment>
+                        {this.state.disks.map(function(e, idx){
+                            return (
+                                <Segment>
+                                    <Header as="h3">
+                                        <code>
+                                            {e.filesystem}
+                                        </code>
+                                        <Header.Subheader>
+                                            Mounted on <code>{e.mounted_on}</code>
+                                        </Header.Subheader>
+                                    </Header>
+                                    <Progress progress percent={18} />
+                                    <Statistic.Group widths={4} size="small">
+                                        <Statistic label={ 'Total ' + unit } value={e.total} />
+                                        <Statistic label='Used' value={e.used} />
+                                        <Statistic label='Available' value={e.available} />
+                                        <Statistic label='Used %' value={e.use_percent} />
+                                    </Statistic.Group>
+                                </Segment>
+                            );
+                        })}
                     </Segment.Group>
                 </Segment>
             </Segment>

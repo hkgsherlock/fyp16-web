@@ -3,35 +3,67 @@ import {Breadcrumb, Button, Form, Input, Message, Segment} from "semantic-ui-rea
 import {Link} from "react-router";
 
 class SetLogin extends Component {
-    constructor() {
-        super();
-        this.state = {
-            saving: false,
-            lastSaveResult: null,
-            lastSaveReason: null
+    state = {
+        loading: false,
+        saving: false,
+        lastSaveResult: null,
+        lastSaveReason: null,
+        uname: '',
+        pwd: ''
+    }
+
+    componentDidMount() {
+        this.reloadSet();
+    }
+
+    async reloadSet() {
+        this.setState({loading: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/set/login');
+        let json = await result.json();
+        this.setState({loading: false});
+        if (result.ok) {
+            this.setState({
+                uname: json.uname,
+                pwd: json.pwd
+            });
+        } else {
         }
     }
 
-    save() {
-        this.setState({
-            saving: true,
-            lastSaveResult: null,
-            lastSaveReason: null
-        });
-
-        setTimeout(() => {
-            this.setState({
-                saving: false,
-                lastSaveResult: true
+    async save() {
+        this.setState({saving: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/set/login', {
+            method: 'POST',
+            body: JSON.stringify({
+                uname: this.state.uname,
+                pwd: this.state.pwd
             })
-        }, 3000);
+        });
+        let json = await result.json();
+        this.setState({
+            saving: false,
+            lastSaveResult: result.ok
+        });
+        if (!result.ok) {
+            this.setState({
+                lastSaveReason: json.message
+            })
+        }
+    }
+
+    handleChange(field, e) {
+        this.setState({ [field]: e.target.value })
     }
 
     render() {
         const handleSaveBtnClick = this.save.bind(this);
 
+        const handleOnUsernameChange = (e) => this.handleChange('uname', e);
+        const handleOnPasswordChange = (e) => this.handleChange('uname', e);
         return (
-            <Segment basic>
+            <Segment basic loading={this.state.loading}>
                 <Breadcrumb size='big'>
                     <Breadcrumb.Section>
                         <Link to="/settings">
@@ -68,11 +100,11 @@ class SetLogin extends Component {
                     <Form>
                         <Form.Field>
                             <label>Username</label>
-                            <Input placeholder='Username'/>
+                            <Input placeholder='Username' value={ this.state.uname } onChange={ handleOnUsernameChange } />
                         </Form.Field>
                         <Form.Field>
                             <label>Password</label>
-                            <Input placeholder='Password'/>
+                            <Input placeholder='Password' value={ this.state.pwd } onChange={ handleOnPasswordChange }/>
                         </Form.Field>
                     </Form>
                 </Segment>

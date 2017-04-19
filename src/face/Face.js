@@ -5,13 +5,76 @@ import {
 } from "semantic-ui-react";
 
 class Face extends Component {
-    constructor() {
-        super();
+    state = {
+        loading: false,
+        id: '...',
+        category: '...',
+        lastUpdate: '...',
+        lastDetect: '...',
+        faces: [],
+        detects: []
+    };
 
-        this.state = {
-            editing: false,
-            saving: false
-        };
+    componentDidMount() {
+        this.reloadRecords();
+    }
+
+    async reloadRecords() {
+        let request_face = this.props.params.id;
+        this.setState({loading: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/face/' + request_face);
+        let json = await result.json();
+        this.setState({loading: false});
+        if (result.ok) {
+            this.setState({
+                id: json.id,
+                category: json.category,
+                lastUpdate: json.lastUpdate,
+                lastDetect: json.lastDetect,
+                faces: json.faces,
+                detects: json.detects
+            });
+        } else {
+        }
+    }
+
+    getColorFromCategoryName(category_name) {
+        category_name = category_name.toLowerCase();
+        if (category_name === 'allowed') {
+            return 'green';
+        }
+        if (category_name === 'confirmed') {
+            return 'olive';
+        }
+        if (category_name === 'pending') {
+            return 'yellow';
+        }
+        if (category_name === 'deny') {
+            return 'red';
+        }
+        if (category_name === 'ignored') {
+            return '';
+        }
+    }
+
+    getIconFromCategoryName(category_name) {
+        category_name = category_name.toLowerCase();
+        if (category_name === 'allowed') {
+            return 'checkmark';
+        }
+        if (category_name === 'confirmed') {
+            return 'circle outline';
+        }
+        if (category_name === 'pending') {
+            return 'hourglass half';
+        }
+        if (category_name === 'deny') {
+            return 'warning sign';
+        }
+        if (category_name === 'ignored') {
+            return 'window minimize';
+        }
     }
 
     save(e) {
@@ -31,6 +94,8 @@ class Face extends Component {
     }
 
     render() {
+        const category2color = (n) => this.getColorFromCategoryName(n);
+        const category2icon = (n) => this.getIconFromCategoryName(n);
         const handleEditClick = (e) => this.setState({editing: !this.state.editing});
         const handleSaveClick = this.save.bind(this);
 
@@ -44,29 +109,31 @@ class Face extends Component {
                         <Header.Subheader>
                             Face profile
                         </Header.Subheader>
-                        <code>{ this.props.params.id || '???' }</code>
+                        <code>{ this.state.id }</code>
                     </Header>
                     <Grid stackable>
                         <Grid.Column width="4">
-                            <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'
-                                   size='medium' />
+                            <Image src={ this.state.faces.length > 0 ?
+                                this.state.faces[0].url :
+                                '/question.png' }
+                                   size='medium'/>
                         </Grid.Column>
                         <Grid.Column width="8">
-                            <Label color="green">
-                                <Icon name="checkmark" />
-                                Allowed
+                            <Label color={category2color(this.state.category)} size="large">
+                                <Icon name={category2icon(this.state.category)}/>
+                                { this.state.category }
                             </Label>
                             <Header as='h3'>
                                 <Header.Subheader>
                                     Face profile last updated
                                 </Header.Subheader>
-                                Sat 1 Apr 2017 10:57:55 GMT+0800
+                                { this.state.lastUpdate || '(Never updated)' }
                             </Header>
                             <Header as='h3'>
                                 <Header.Subheader>
                                     Last Detected
                                 </Header.Subheader>
-                                Sat 15 Apr 2017 09:32:48 GMT+0800
+                                { this.state.lastDetect || '(Never detected)' }
                             </Header>
                         </Grid.Column>
                         <Grid.Column width="4" textAlign="right">
@@ -87,60 +154,30 @@ class Face extends Component {
                         </Grid.Column>
                     </Grid>
                     <Divider />
-                    <Statistic horizontal value='46' label='Sample Images' />
+                    <Statistic horizontal value={this.state.faces.length} label='Sample Images'/>
                     <Image.Group size='tiny'>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
-                        <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png'/>
+                        {
+                            this.state.faces.map((e, idx) => (<Image data-filename={e.filename} src={e.url}/>))
+                        }
                     </Image.Group>
                     <Divider />
-                    <Header as='h3'>
-                        Recent Seens
-                    </Header>
+                    <Statistic horizontal value={this.state.detects.length} label='Recent Seens'/>
                     <Item.Group>
-                        <Item>
-                            <Item.Image size='tiny' src='http://react.semantic-ui.com/assets/images/wireframe/image.png' />
+                        {
+                            this.state.detects.map((e, idx) => (
+                                <Item>
+                                    <Item.Image size='tiny'
+                                                src={e.img}/>
 
-                            <Item.Content verticalAlign='middle'>
-                                <Item.Header as='a'>12 Years a Slave</Item.Header>
-                                <Item.Meta>
-                                    <span className='cinema'>charles</span>
-                                </Item.Meta>
-                            </Item.Content>
-                        </Item>
-
-                        <Item>
-                            <Item.Image size='tiny' src='http://react.semantic-ui.com/assets/images/wireframe/image.png' />
-
-                            <Item.Content verticalAlign='middle'>
-                                <Item.Header as='a'>My Neighbor Totoro</Item.Header>
-                                <Item.Meta>
-                                    <span className='cinema'>charles, tim, alan</span>
-                                </Item.Meta>
-                            </Item.Content>
-                        </Item>
-
-                        <Item>
-                            <Item.Image size='tiny' src='http://react.semantic-ui.com/assets/images/wireframe/image.png' />
-
-                            <Item.Content verticalAlign='middle'>
-                                <Item.Header as='a'>Watchmen</Item.Header>
-                                <Item.Meta>
-                                    <span className='cinema'>charles, tim</span>
-                                </Item.Meta>
-                            </Item.Content>
-                        </Item>
+                                    <Item.Content verticalAlign='middle'>
+                                        <Item.Header as='a'>{ e.datetime }</Item.Header>
+                                        <Item.Meta>
+                                            <span className='cinema'>{ e.people.join(', ') }</span>
+                                        </Item.Meta>
+                                    </Item.Content>
+                                </Item>
+                            ))
+                        }
                     </Item.Group>
                 </Container>
             </Segment>

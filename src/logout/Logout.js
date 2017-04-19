@@ -1,8 +1,11 @@
 import {Component} from 'react';
+import storage from '../storage'
+import {browserHistory} from 'react-router'
 
 class Logout extends Component {
     componentDidMount() {
-        // Auth.logout();
+        storage.setItem('uinfo', null);
+        browserHistory.push('/login');
     }
 
     render() {

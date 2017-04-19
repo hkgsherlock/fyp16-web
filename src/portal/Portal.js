@@ -2,9 +2,47 @@ import React, {Component} from 'react';
 import {Container, Feed, Grid, Header, Icon, Segment, Statistic} from "semantic-ui-react";
 
 class Portal extends Component {
+    /*
+     ret = {
+     'records_count': result[0],
+     'faces_count': result[1],
+     'notifications_count': result[2],
+     'uptime':  int(round(uptime_sec / 3600))
+     }
+     */
+
+    state = {
+        loading: false,
+        records_count: '...',
+        faces_count: '...',
+        notifications_count: '...',
+        uptime: '...'
+    };
+
+    componentDidMount() {
+        this.reloadStat();
+    }
+
+    async reloadStat() {
+        this.setState({loading: true});
+        let result;
+        result = await fetch('http://localhost:5000/api/stat');
+        let json = await result.json();
+        this.setState({loading: false});
+        if (result.ok) {
+            this.setState({
+                records_count: json.records_count,
+                faces_count: json.faces_count,
+                notifications_count: json.notifications_count,
+                uptime: json.uptime
+            });
+        } else {
+        }
+    }
+
     render() {
         return (
-            <Container>
+            <Segment basic loading={ this.state.loading }>
                 <Header as="h2" dividing>
                     Portal
                     <Header.Subheader>
@@ -25,7 +63,7 @@ class Portal extends Component {
                                     <Icon inverted name='video camera' size="huge" />
                                 </Grid.Column>
                                 <Grid.Column width={13} verticalAlign="middle">
-                                    <Statistic inverted horizontal value='4,500' label='Video Captures' />
+                                    <Statistic inverted horizontal value={ this.state.records_count } label='Video Captures' />
                                 </Grid.Column>
                             </Grid>
                         </Segment>
@@ -36,7 +74,7 @@ class Portal extends Component {
                                     <Icon inverted name='user' size="huge" />
                                 </Grid.Column>
                                 <Grid.Column width={13} verticalAlign="middle">
-                                    <Statistic inverted horizontal value='3' label='Allowed Persons' />
+                                    <Statistic inverted horizontal value={ this.state.faces_count } label='Profiled Persons' />
                                 </Grid.Column>
                             </Grid>
                         </Segment>
@@ -47,7 +85,7 @@ class Portal extends Component {
                                     <Icon inverted name='info circle' size="huge" />
                                 </Grid.Column>
                                 <Grid.Column width={13} verticalAlign="middle">
-                                    <Statistic inverted horizontal value='15' label='Notifications' />
+                                    <Statistic inverted horizontal value={ this.state.notifications_count } label='Notifications' />
                                 </Grid.Column>
                             </Grid>
                         </Segment>
@@ -58,7 +96,7 @@ class Portal extends Component {
                                     <Icon inverted name='clock' size="huge" />
                                 </Grid.Column>
                                 <Grid.Column width={13} verticalAlign="middle">
-                                    <Statistic inverted horizontal value='48' label='Hours of running' />
+                                    <Statistic inverted horizontal value={ this.state.uptime } label='Hours of running' />
                                 </Grid.Column>
                             </Grid>
                         </Segment>
@@ -118,7 +156,7 @@ class Portal extends Component {
                     </Grid.Column>
 
                 </Grid>
-            </Container>
+            </Segment>
         );
     }
 }

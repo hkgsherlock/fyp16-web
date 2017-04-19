@@ -9,6 +9,7 @@
         <item value="fluid" />
         <item value="selection" />
         <item value="progress" />
+        <item value="image" />
       </myValues>
     </inspection_tool>
   </profile>

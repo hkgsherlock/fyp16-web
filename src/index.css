@@ -10,3 +10,7 @@ html, body {
 code {
     font-family: Consolas, "Menlo", "Ubuntu Mono Regular", monospace;
 }
+
+pre, code {
+    background-color: #eeeeee;
+}

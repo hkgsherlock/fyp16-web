@@ -5,14 +5,12 @@ import ReactDOM from 'react-dom'
 import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 
 import App from './components/App'
-// import RouterContainer from './services/RouterContainer';
-// import LoginActions from './actions/LoginActions';
 
 import Login from './login/Login';
 import FaceList from './face/FaceList'
 import Face from './face/Face'
-// import RecordList from './record/RecordList'
-// import Record from './record/Record'
+import RecordList from './record/RecordList'
+import Record from './record/Record'
 import Settings from './settings/Settings';
 import SetPortal from './settings/SetPortal'
 import SetLogin from './settings/SetLogin';
@@ -43,8 +41,8 @@ ReactDOM.render(
             <IndexRoute component={ Portal }/>
             <Route path="face(s)" component={ FaceList }/>
             <Route path="face/:id" component={ Face }/>
-            {/*<Route path="/record(s)" component={ Records }/>*/}
-            {/*<Route path="/record/:id" component={ Record }/>*/}
+            <Route path="record(s)" component={ RecordList }/>
+            <Route path="record/:id" component={ Record }/>
             <Route path="settings" component={ Settings }>
                 <IndexRoute component={ SetPortal } />
                 <Route path="login" component={ SetLogin }/>

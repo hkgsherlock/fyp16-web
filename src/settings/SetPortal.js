@@ -75,11 +75,11 @@ class SetPortal extends Component {
                             Disk usage and spaces
                         </Link>
                     </List.Item>
-                    <List.Item name='datetime' >
-                        <Link to="/settings/datetime">
-                            Date / Time
-                        </Link>
-                    </List.Item>
+                    {/*<List.Item name='datetime' >*/}
+                        {/*<Link to="/settings/datetime">*/}
+                            {/*Date / Time*/}
+                        {/*</Link>*/}
+                    {/*</List.Item>*/}
                     <List.Item name='reboot' >
                         <Link to="/settings/reboot">
                             Reboot

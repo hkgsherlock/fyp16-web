@@ -4,32 +4,41 @@ import './Login.css'
 import {Flex} from 'react-layout-components'
 import { browserHistory } from 'react-router';
 import DocumentTitle from 'react-document-title'
+import storage from '../storage'
 
 class Login extends Component {
     constructor() {
         super();
         this.state = {
-            uname: 'test',
+            uname: '',
             password: '',
             waiting: false,
             result: null
         };
     }
-    //
-    login(e) {
+
+    async login(e) {
         e.preventDefault();
         this.setState({waiting: true});
-        // Auth.login(this.state.uname, this.state.password)
-        //     .catch(function (err) {
-        //         alert("There's an error logging in");
-        //         console.log("Error logging in", err);
-        //     });
-        setTimeout(() => {
-            this.setState({waiting: false, result: true});
-            setTimeout(() => browserHistory.push('/'), 750);
-        }, 1000);
+        let result;
+        result = await fetch('http://localhost:5000/api/auth/login', {
+            method: 'POST',
+            body: JSON.stringify({
+                uname: this.state.uname,
+                pwd: this.state.password,
+            }),
+        });
+        let json = await result.json();
+        this.setState({waiting: false});
+        if (result.ok) {
+            this.setState({result: true});
+            storage.setItem('uinfo', json.jwt);
+            browserHistory.push('/');
+        } else {
+            this.setState({result: false});
+        }
     }
-    //
+
     handleChange(field, e) {
         this.setState({ [field]: e.target.value })
     }
