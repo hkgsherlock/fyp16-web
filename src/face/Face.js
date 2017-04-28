@@ -1,18 +1,26 @@
 import React, {Component} from 'react'
 import {
     Button, Segment, Divider, Grid, Header, Image, Container, Label, Icon, Statistic,
-    Item
+    Item, Modal, Message, Confirm, Dropdown, Input
 } from "semantic-ui-react";
+import './Face.css';
+import {browserHistory} from "react-router";
 
 class Face extends Component {
     state = {
         loading: false,
+        lastUploadResult: null,
+        lastUploadReason: null,
         id: '...',
         category: '...',
         lastUpdate: '...',
         lastDetect: '...',
         faces: [],
-        detects: []
+        detects: [],
+        fileToDelete: null,
+        confirmingDelete: false,
+        newId: null,
+        newCategory: null
     };
 
     componentDidMount() {
@@ -23,13 +31,15 @@ class Face extends Component {
         let request_face = this.props.params.id;
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/face/' + request_face);
+        result = await fetch('http://pismartcam.local:5000/api/face/' + request_face);
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {
             this.setState({
                 id: json.id,
                 category: json.category,
+                newId: json.id,
+                newCategory: json.category,
                 lastUpdate: json.lastUpdate,
                 lastDetect: json.lastDetect,
                 faces: json.faces,
@@ -77,39 +87,122 @@ class Face extends Component {
         }
     }
 
-    save(e) {
-        this.setState({saving: true});
-        console.log(this.refs);
-        setTimeout(() => {
-            // this.refs.container.success(
-            //     "Welcome welcome welcome!!",
-            //     "You are now portal my friend. Welcome portal my friend.", {
-            //         timeOut: 3000
-            //     });
+    async save(e) {
+        e.preventDefault();
+        if (this.state.newCategory.length === 0 || this.state.newId.length === 0) {
+            return;
+        }
+        this.setState({loading: true});
+        let result;
+        result = await fetch('http://pismartcam.local:5000/api/face/' + this.state.id, {
+            method: 'POST',
+            body: JSON.stringify({
+                id: this.state.newId,
+                category: this.state.newCategory
+            })
+        });
+        let json = await result.json();
+        this.setState({loading: false});
+        this.setState({
+            saving: false,
+            lastSaveResult: result.ok
+        });
+        if (result.ok) {
+            browserHistory.push('/face');
+        } else {
             this.setState({
-                editing: false,
-                saving: false
-            });
-        }, 1500);
+                lastSaveReason: json.message
+            })
+        }
+    }
+
+    async uploadFace(e) {
+        e.preventDefault();
+        let files = e.target.querySelector('input[name=img]').files;
+        if (files.length < 1) {
+            return;
+        }
+        let formData = new FormData();
+        formData.append('img', files[0]);
+        let result;
+        result = await fetch("http://pismartcam.local:5000/api/face/" + this.state.id + "/faces/", {
+            method: 'POST',
+            body: formData
+        });
+        let json = await result.json();
+        this.setState({
+            lastUploadResult: result.ok
+        });
+        if (!result.ok) {
+            this.setState({
+                lastUploadReason: json.message
+            })
+        }
+    }
+
+    deleteItemsAdd(e) {
+        e.preventDefault();
+
+        if (!this.state.editing) {
+            return;
+        }
+
+        let filename = e.target.getAttribute("data-filename");
+        console.log(filename);
+        this.setState({fileToDelete: filename, confirmingDelete: true});
+    }
+
+    async deleteImage(e) {
+        e.preventDefault();
+        this.setState({loading: true, confirmingDelete: false});
+        let result;
+        result = await fetch('http://pismartcam.local:5000/api/face/' + this.state.id + "/faces/" + this.state.fileToDelete, {
+            method: 'DELETE'
+        });
+        let json = await result.json();
+        this.setState({loading: false});
+        this.setState({
+            saving: false,
+            lastSaveResult: result.ok
+        });
+        if (result.ok) {
+            this.reloadRecords();
+        } else {
+            this.setState({
+                lastSaveReason: json.message
+            })
+        }
     }
 
     render() {
         const category2color = (n) => this.getColorFromCategoryName(n);
         const category2icon = (n) => this.getIconFromCategoryName(n);
-        const handleEditClick = (e) => this.setState({editing: !this.state.editing});
+        const handleEditClick = (e) => this.setState({editing: !this.state.editing, wantToDelete: []});
         const handleSaveClick = this.save.bind(this);
+        const handleFaceUploadClick = this.uploadFace.bind(this);
+        const handleDeleteItemsAdd = this.deleteItemsAdd.bind(this);
+        const handleConfirmDeleteImageClick = this.deleteImage.bind(this);
+        const handleConfirmDeleteCancelClick = (e) => this.setState({confirmingDelete: false});
+        const handleIdChange = (e) => this.setState({newId: e.target.value});
+        const handleCategoryChange = (e, {value}) => this.setState({newCategory: value});
 
         return (
             <Segment
                 basic={ !this.state.editing }
                 raised={ this.state.editing }
-                loading={ this.state.saving }>
+                loading={ this.state.loading || this.state.saving }>
                 <Container>
                     <Header as='h2' style={{marginTop: 0}}>
                         <Header.Subheader>
                             Face profile
                         </Header.Subheader>
+                        { this.state.editing ?
+                        <Input placeholder='e.g.: alan_smithee'
+                               value={this.state.newId}
+                               onChange={handleIdChange}/>
+                        :
                         <code>{ this.state.id }</code>
+                        }
                     </Header>
                     <Grid stackable>
                         <Grid.Column width="4">
@@ -119,10 +212,42 @@ class Face extends Component {
                                    size='medium'/>
                         </Grid.Column>
                         <Grid.Column width="8">
+                            { this.state.editing ?
+                            <Dropdown
+                                ref="method_dropdown"
+                                defaultValue={this.state.category}
+                                fluid
+                                selection
+                                options={[
+                                    {
+                                        text: 'Allowed',
+                                        value: 'allowed'
+                                    },
+                                    {
+                                        text: 'Confirmed',
+                                        value: 'confirmed'
+                                    },
+                                    {
+                                        text: 'Pending',
+                                        value: 'pending'
+                                    },
+                                    {
+                                        text: 'Deny',
+                                        value: 'deny'
+                                    },
+                                    {
+                                        text: 'Ignored',
+                                        value: 'ignored'
+                                    }
+                                ]}
+                                onChange={handleCategoryChange}
+                            />
+                            :
                             <Label color={category2color(this.state.category)} size="large">
                                 <Icon name={category2icon(this.state.category)}/>
                                 { this.state.category }
                             </Label>
+                            }
                             <Header as='h3'>
                                 <Header.Subheader>
                                     Face profile last updated
@@ -155,9 +280,52 @@ class Face extends Component {
                     </Grid>
                     <Divider />
                     <Statistic horizontal value={this.state.faces.length} label='Sample Images'/>
+                    {
+                        this.state.editing &&
+                        <Modal trigger={<Button color="yellow" floated='right'>Upload</Button>}>
+                            <Modal.Header>Select a Photo</Modal.Header>
+                            <Modal.Content image>
+                                <form method="post" onSubmit={handleFaceUploadClick}>
+                                    <p>
+                                        Please specify a file, or a set of files:<br/>
+                                        <input type="file" name="img" size="40"/>
+                                    </p>
+                                    <div>
+                                        <input type="submit" value="Send"/>
+                                    </div>
+                                </form>
+
+                                { this.state.lastUploadResult === true &&
+                                <Message positive>
+                                    <Message.Header>Settings saved</Message.Header>
+                                </Message>
+                                }
+                                { this.state.lastUploadResult === false &&
+                                <Message positive>
+                                    <Message.Header>Failed to save settings</Message.Header>
+                                    { this.state.lastUploadReason }
+                                </Message>
+                                }
+                            </Modal.Content>
+                        </Modal>
+                    }
+                    <Confirm
+                        header='Deleting face images from face profile.'
+                        content={'Do you really want to selected image "' + this.state.fileToDelete + '"? ' +
+                        'This action cannot be undone.'}
+                        confirmButton="Delete"
+                        open={ this.state.confirmingDelete }
+                        onConfirm={ handleConfirmDeleteImageClick }
+                        onCancel={ handleConfirmDeleteCancelClick }
+                    />
+                    {
+                        this.state.editing &&
+                        <p>Select the image(s) to delete.</p>
+                    }
                     <Image.Group size='tiny'>
                         {
-                            this.state.faces.map((e, idx) => (<Image data-filename={e.filename} src={e.url}/>))
+                            this.state.faces.map((e, idx) => (<Image data-filename={e.filename} src={e.url}
+                                                                     onClick={handleDeleteItemsAdd}/>))
                         }
                     </Image.Group>
                     <Divider />
@@ -167,7 +335,7 @@ class Face extends Component {
                             this.state.detects.map((e, idx) => (
                                 <Item>
                                     <Item.Image size='tiny'
-                                                src={e.img}/>
+                                                src={ e.img ? e.img : '../image.png' }/>
 
                                     <Item.Content verticalAlign='middle'>
                                         <Item.Header as='a'>{ e.datetime }</Item.Header>

@@ -15,7 +15,7 @@ class FaceList extends Component {
     async reloadRecords() {
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/face');
+        result = await fetch('http://pismartcam.local:5000/api/face');
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {

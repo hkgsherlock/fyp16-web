@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="951cb31f-3576-4eb7-802b-d4f42070024b" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>json.capture_</find>
+      <find>46</find>
+      <find>this</find>
+      <find>this.refs</find>
+      <find>Co</find>
+      <find>co</find>
+      <find>confirm</find>
+      <find>deleteImages</find>
+      <find>&lt;confirm</find>
+      <find>e</find>
+      <find>e.</find>
+      <find>e.tar</find>
+      <find>e.targe</find>
+      <find>e.target</find>
+      <find>e.target.</find>
+      <find>e.target.val</find>
+      <find>icon</find>
+      <find>upload</find>
+      <find>e.target.value</find>
+      <find>ha</find>
+      <find>handlech</find>
+      <find>handlechan</find>
+      <find>handlechange</find>
+      <find>local</find>
+      <find>localh</find>
+      <find>localho</find>
+      <find>localhost</find>
+      <find>http://</find>
+      <find>http://pismartcam.local:5000</find>
+      <find>http://localhost:5000</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>http://react.semantic-ui.com/assets</replace>
+      <replace>&lt;img src='http://react.semantic-ui.com/assets/images/wireframe/image.png' alt='' /&gt;</replace>
+      <replace>&lt;Link to=&quot;/settings/</replace>
+      <replace>List.Item</replace>
+      <replace>&lt;Statistic progress</replace>
+      <replace>&lt;MediaQuery maxDeviceWidth={1224}&gt;</replace>
+      <replace>'...'</replace>
+      <replace>json.capture.</replace>
+      <replace>http://localhost:5000</replace>
+      <replace>http://pismartcam.local:5000</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/AuthenticatedApp.js" />
+        <option value="$PROJECT_DIR$/src/reducers.js" />
+        <option value="$PROJECT_DIR$/src/pages/Home.js" />
+        <option value="$PROJECT_DIR$/src/index.jsx" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/src/components/App.js" />
+        <option value="$PROJECT_DIR$/src/pages/Logout.js" />
+        <option value="$PROJECT_DIR$/src/pages/Login.css" />
+        <option value="$PROJECT_DIR$/src/pages/Settings.js" />
+        <option value="$PROJECT_DIR$/src/pages/Login.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/pages/404.js" />
+        <option value="$PROJECT_DIR$/src/not_found/NotFound.js" />
+        <option value="$PROJECT_DIR$/src/settings/login.js" />
+        <option value="$PROJECT_DIR$/src/settings/SettingsContentAbstract.js" />
+        <option value="$PROJECT_DIR$/src/components/App.css" />
+        <option value="$PROJECT_DIR$/src/settings/SettingsLoginCredentials.js" />
+        <option value="$PROJECT_DIR$/src/settings/SettingsDropbox.js" />
+        <option value="$PROJECT_DIR$/src/not_found/404.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/login/Login.js" />
+        <option value="$PROJECT_DIR$/src/logout/Logout.js" />
+        <option value="$PROJECT_DIR$/src/components/App.jsx" />
+        <option value="$PROJECT_DIR$/src/settings/SetDropbox.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetLogin.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetVideoCapture.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetMotionDetection.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetFaceDetection.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetFaceRecognition.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetVideoRecording.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetDiskSpace.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetGmail.js" />
+        <option value="$PROJECT_DIR$/src/face/FaceList.js" />
+        <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/src/settings/SetReboot.js" />
+        <option value="$PROJECT_DIR$/src/face/Face.css" />
+        <option value="$PROJECT_DIR$/src/face/FaceAdd.js" />
+        <option value="$PROJECT_DIR$/src/record/RecordList.js" />
+        <option value="$PROJECT_DIR$/src/portal/Portal.js" />
+        <option value="$PROJECT_DIR$/src/record/Record.js" />
+        <option value="$PROJECT_DIR$/build/static/js/main.0dddb32d.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetResetBuzzer.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetIrFilter.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/settings/SetPortal.js" />
+        <option value="$PROJECT_DIR$/src/settings/Settings.js" />
+        <option value="$PROJECT_DIR$/src/face/Face.js" />
+        <option value="$PROJECT_DIR$/build/static/js/main.336a1e08.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-6" />
+    <option name="y" value="-6" />
+    <option name="width" value="1932" />
+    <option name="height" value="1052" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>ES6ConvertVarToLetConst</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="settings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="record" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="face" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="E:\Dropbox\fyp16\scratch\node_modules\eslint" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.standard" value="E:\Dropbox\fyp16\scratch\node_modules\eslint" />
+    <property name="SearchEverywhereHistoryKey" value="face&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/face/Face.js&#10;settings&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/Settings.js&#10;setpor&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetPortal.js&#10;record&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/record/Record.js&#10;facelist&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/face/FaceList.js&#10;facerec&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js&#10;set&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js&#10;reboot&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetReboot.js&#10;gmail&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js&#10;motion&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetMotionDetection.js&#10;setfacere&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js&#10;setcap&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js&#10;setvideo&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js&#10;setlogin&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetLogin.js&#10;setgm&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js&#10;setdrop&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js&#10;Dropbox&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js&#10;recor&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/record/Record.js&#10;recogni&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js&#10;facede&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetFaceDetection.js&#10;Record.js&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/record/Record.js&#10;dropbox&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js&#10;App.&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/components/App.css&#10;se&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/settings/Settings.js&#10;Login&#9;FILE&#9;file://E:/Dropbox/fyp16/scratch/src/pages/Login.js" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lihkg-web" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Dropbox\fyp16\scratch\src\settings" />
+      <recent name="E:\Dropbox\fyp16\scratch\public" />
+      <recent name="E:\Dropbox\fyp16\scratch\src\face" />
+      <recent name="E:\Dropbox\fyp16\scratch\src\record" />
+      <recent name="E:\Dropbox\fyp16\scratch\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dropbox\fyp16\scratch\public" />
+      <recent name="E:\Dropbox\fyp16\scratch\src\not_found" />
+      <recent name="E:\Dropbox\fyp16\scratch\src\" />
+      <recent name="E:\Dropbox\fyp16\scratch\src\settings" />
+      <recent name="E:\Dropbox\fyp16\scratch\src\logout" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration default="false" name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="eject" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eject" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="build" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="npm.start" />
+      <item index="1" class="java.lang.String" itemvalue="npm.eject" />
+      <item index="2" class="java.lang.String" itemvalue="npm.build" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="npm.build" />
+        <item index="1" class="java.lang.String" itemvalue="npm.start" />
+        <item index="2" class="java.lang.String" itemvalue="npm.eject" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="951cb31f-3576-4eb7-802b-d4f42070024b" name="Default" comment="" />
+      <created>1492122628481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1492122628481</updated>
+      <workItem from="1492122630489" duration="37331000" />
+      <workItem from="1492197970435" duration="43000" />
+      <workItem from="1492202806516" duration="31547000" />
+      <workItem from="1492234557038" duration="27410000" />
+      <workItem from="1492398179733" duration="43552000" />
+      <workItem from="1492662415260" duration="21963000" />
+      <workItem from="1492827185589" duration="6401000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1492176649835</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492176649835</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1492180724317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1492180724317</updated>
+    </task>
+    <task id="LOCAL-00003" summary="201704160542">
+      <created>1492292556225</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1492292556225</updated>
+    </task>
+    <task id="LOCAL-00004" summary="201704191921 bound api ok">
+      <created>1492600950459</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1492600950459</updated>
+    </task>
+    <task id="LOCAL-00005" summary="201704191921 bound api ok">
+      <created>1492601169321</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1492601169321</updated>
+    </task>
+    <task id="LOCAL-00006" summary="20170422">
+      <created>1492838425517</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1492838425517</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="168247000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1932" height="1052" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.65085286" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.3491471" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.4914712" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17004265" sideWeight="0.7677419" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.4914712" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14810811" sideWeight="0.65884864" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29837838" sideWeight="0.3411514" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.4936034" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17004265" sideWeight="0.7677419" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.49573562" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <MESSAGE value="201704160542" />
+    <MESSAGE value="201704191921 bound api ok" />
+    <MESSAGE value="20170422" />
+    <option name="LAST_COMMIT_MESSAGE" value="20170422" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/login/Login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/not_found/NotFound.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/react-toastr/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="228" column="16" lean-forward="false" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/LoginActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/Home.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/semantic-ui-react/dist/es/collections/Menu/Menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.css" />
+    <entry file="file://$PROJECT_DIR$/src/settings/SettingsContentAbstract.js" />
+    <entry file="file://$PROJECT_DIR$/src/not_found/404.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-responsive/dist/react-responsive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="270" column="20" lean-forward="false" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/isomorphic-fetch/fetch-npm-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="1505" column="0" lean-forward="false" selection-start-line="1505" selection-start-column="0" selection-end-line="1505" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logout/Logout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/semantic-ui-react/dist/es/elements/Container/Container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="80" column="102" lean-forward="false" selection-start-line="80" selection-start-column="102" selection-end-line="80" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/semantic-ui-react/dist/es/modules/Dropdown/Dropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="1070" column="2" lean-forward="false" selection-start-line="1070" selection-start-column="2" selection-end-line="1070" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetMotionDetection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetVideoRecording.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="76" column="62" lean-forward="true" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetVideoCapture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/rc3absy7.bmp" />
+    <entry file="file://$PROJECT_DIR$/public/question.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetFaceDetection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="110" column="71" lean-forward="false" selection-start-line="110" selection-start-column="71" selection-end-line="110" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetDropbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="142" column="21" lean-forward="true" selection-start-line="132" selection-start-column="20" selection-end-line="142" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetGmail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="135" column="20" lean-forward="false" selection-start-line="135" selection-start-column="20" selection-end-line="145" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/face/Face.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/face/FaceAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="98" column="34" lean-forward="true" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/face/FaceList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="74" column="29" lean-forward="true" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/record/Record.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="82" column="29" lean-forward="false" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+          <folding>
+            <marker date="1492830634972" expanded="true" signature="230:3989" ph="{...}" />
+            <marker date="1492830634972" expanded="true" signature="1520:3987" ph="{...}" />
+            <marker date="1492830634972" expanded="true" signature="1624:3970" ph="&lt;Segment/&gt;" />
+            <marker date="1492830634972" expanded="true" signature="1656:3947" ph="&lt;Container/&gt;" />
+            <marker date="1492830634972" expanded="true" signature="3249:3918" ph="&lt;Label.Group/&gt;" />
+            <marker date="1492830634972" expanded="true" signature="3337:3881" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portal/Portal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="121" column="68" lean-forward="false" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.0dddb32d.js" />
+    <entry file="file://$PROJECT_DIR$/src/record/RecordList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="62" column="51" lean-forward="false" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetDiskSpace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="41" column="55" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetReboot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="60" column="64" lean-forward="true" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="41" column="14" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="41" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetIrFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="92" column="36" lean-forward="true" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetResetBuzzer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/E:/Dropbox/fyp16/scratch/src">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/not_found/404.js#DocumentTitle#86;E:/Dropbox/fyp16/scratch/src/not_found/404.js#Link#52;E:/Dropbox/fyp16/scratch/src/not_found/404.js#PureComponent#15;E:/Dropbox/fyp16/scratch/src/not_found/404.js#React#7;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/App.jsx#Button#52;E:/Dropbox/fyp16/scratch/src/components/App.jsx#DocumentTitle#179;E:/Dropbox/fyp16/scratch/src/components/App.jsx#Grid#60;E:/Dropbox/fyp16/scratch/src/components/App.jsx#Header#66;E:/Dropbox/fyp16/scratch/src/components/App.jsx#Icon#74;E:/Dropbox/fyp16/scratch/src/components/App.jsx#Link#129;E:/Dropbox/fyp16/scratch/src/components/App.jsx#MediaQuery#284;E:/Dropbox/fyp16/scratch/src/components/App.jsx#Menu#80;E:/Dropbox/fyp16/scratch/src/components/App.jsx#PureComponent#15;E:/Dropbox/fyp16/scratch/src/components/App.jsx#React#7;E:/Dropbox/fyp16/scratch/src/components/App.jsx#Segment#86;E:/Dropbox/fyp16/scratch/src/components/App.jsx#VelocityTransitionGroup#229;E:/Dropbox/fyp16/scratch/src/components/App.jsx#browserHistory#135;E:/Dropbox/fyp16/scratch/src/components/App.jsx#storage#326;</node>
+            <node x="" y="">$PROJECT_DIR$/src/services/AuthService.js#LOGIN_URL#64;E:/Dropbox/fyp16/scratch/src/services/AuthService.js#LoginActions#118;E:/Dropbox/fyp16/scratch/src/services/AuthService.js#request#7;E:/Dropbox/fyp16/scratch/src/services/AuthService.js#when#38;</node>
+            <node x="" y="">$PROJECT_DIR$/src/face/Face.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/face/Face.js#Button#52;E:/Dropbox/fyp16/scratch/src/face/Face.js#Component#15;E:/Dropbox/fyp16/scratch/src/face/Face.js#Confirm#160;E:/Dropbox/fyp16/scratch/src/face/Face.js#Container#99;E:/Dropbox/fyp16/scratch/src/face/Face.js#Divider#69;E:/Dropbox/fyp16/scratch/src/face/Face.js#Dropdown#169;E:/Dropbox/fyp16/scratch/src/face/Face.js#Face.css#213;E:/Dropbox/fyp16/scratch/src/face/Face.js#Grid#78;E:/Dropbox/fyp16/scratch/src/face/Face.js#Header#84;E:/Dropbox/fyp16/scratch/src/face/Face.js#Icon#117;E:/Dropbox/fyp16/scratch/src/face/Face.js#Image#92;E:/Dropbox/fyp16/scratch/src/face/Face.js#Input#179;E:/Dropbox/fyp16/scratch/src/face/Face.js#Item#138;E:/Dropbox/fyp16/scratch/src/face/Face.js#Label#110;E:/Dropbox/fyp16/scratch/src/face/Face.js#Message#151;E:/Dropbox/fyp16/scratch/src/face/Face.js#Modal#144;E:/Dropbox/fyp16/scratch/src/face/Face.js#React#7;E:/Dropbox/fyp16/scratch/src/face/Face.js#Segment#60;E:/Dropbox/fyp16/scratch/src/face/Face.js#Statistic#123;E:/Dropbox/fyp16/scratch/src/face/Face.js#browserHistory#242;</node>
+            <node x="" y="">$PROJECT_DIR$/src/face/FaceAdd.js#Button#52;E:/Dropbox/fyp16/scratch/src/face/FaceAdd.js#Component#15;E:/Dropbox/fyp16/scratch/src/face/FaceAdd.js#Dropdown#99;E:/Dropbox/fyp16/scratch/src/face/FaceAdd.js#Form#86;E:/Dropbox/fyp16/scratch/src/face/FaceAdd.js#Header#69;E:/Dropbox/fyp16/scratch/src/face/FaceAdd.js#Input#92;E:/Dropbox/fyp16/scratch/src/face/FaceAdd.js#Message#77;E:/Dropbox/fyp16/scratch/src/face/FaceAdd.js#React#7;E:/Dropbox/fyp16/scratch/src/face/FaceAdd.js#Segment#60;E:/Dropbox/fyp16/scratch/src/face/FaceAdd.js#browserHistory#144;</node>
+            <node x="" y="">$PROJECT_DIR$/src/face/FaceList.js#Card#84;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#Component#15;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#Container#73;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#Divider#56;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#Header#65;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#Icon#90;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#Image#96;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#Label#103;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#Link#144;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#React#7;E:/Dropbox/fyp16/scratch/src/face/FaceList.js#Segment#47;</node>
+            <node x="" y="">$PROJECT_DIR$/src/login/Login.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/login/Login.js#Button#61;E:/Dropbox/fyp16/scratch/src/login/Login.js#Component#15;E:/Dropbox/fyp16/scratch/src/login/Login.js#DocumentTitle#244;E:/Dropbox/fyp16/scratch/src/login/Login.js#Flex#153;E:/Dropbox/fyp16/scratch/src/login/Login.js#Form#48;E:/Dropbox/fyp16/scratch/src/login/Login.js#Grid#92;E:/Dropbox/fyp16/scratch/src/login/Login.js#Header#78;E:/Dropbox/fyp16/scratch/src/login/Login.js#Icon#86;E:/Dropbox/fyp16/scratch/src/login/Login.js#Input#54;E:/Dropbox/fyp16/scratch/src/login/Login.js#Login.css#124;E:/Dropbox/fyp16/scratch/src/login/Login.js#React#7;E:/Dropbox/fyp16/scratch/src/login/Login.js#Segment#69;E:/Dropbox/fyp16/scratch/src/login/Login.js#browserHistory#199;E:/Dropbox/fyp16/scratch/src/login/Login.js#storage#293;</node>
+            <node x="" y="">$PROJECT_DIR$/src/actions/LoginActions.js#AppDispatcher#41;E:/Dropbox/fyp16/scratch/src/actions/LoginActions.js#LOGIN_USER#103;E:/Dropbox/fyp16/scratch/src/actions/LoginActions.js#LOGOUT_USER#115;E:/Dropbox/fyp16/scratch/src/actions/LoginActions.js#RouterContainer#174;E:/Dropbox/fyp16/scratch/src/actions/LoginActions.js#storage#7;</node>
+            <node x="" y="">LOGIN_URL;LOGIN_USER;LOGOUT_USER;</node>
+            <node x="" y="">$PROJECT_DIR$/src/stores/LoginStore.js#BaseStore#76;E:/Dropbox/fyp16/scratch/src/stores/LoginStore.js#LOGIN_USER#8;E:/Dropbox/fyp16/scratch/src/stores/LoginStore.js#LOGOUT_USER#20;E:/Dropbox/fyp16/scratch/src/stores/LoginStore.js#jwt_decode#113;</node>
+            <node x="" y="">$PROJECT_DIR$/src/logout/Logout.js#Component#8;E:/Dropbox/fyp16/scratch/src/logout/Logout.js#browserHistory#74;E:/Dropbox/fyp16/scratch/src/logout/Logout.js#storage#40;</node>
+            <node x="" y="">$PROJECT_DIR$/src/portal/Portal.js#Component#15;E:/Dropbox/fyp16/scratch/src/portal/Portal.js#Grid#48;E:/Dropbox/fyp16/scratch/src/portal/Portal.js#Header#54;E:/Dropbox/fyp16/scratch/src/portal/Portal.js#Icon#62;E:/Dropbox/fyp16/scratch/src/portal/Portal.js#Item#68;E:/Dropbox/fyp16/scratch/src/portal/Portal.js#Link#128;E:/Dropbox/fyp16/scratch/src/portal/Portal.js#React#7;E:/Dropbox/fyp16/scratch/src/portal/Portal.js#Segment#74;E:/Dropbox/fyp16/scratch/src/portal/Portal.js#Statistic#83;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/lib/React.js#Component#2090;E:/Dropbox/fyp16/scratch/node_modules/react/lib/React.js#PureComponent#2119;</node>
+            <node x="" y="">$PROJECT_DIR$/src/record/Record.js#Button#52;E:/Dropbox/fyp16/scratch/src/record/Record.js#Component#15;E:/Dropbox/fyp16/scratch/src/record/Record.js#Container#99;E:/Dropbox/fyp16/scratch/src/record/Record.js#Divider#69;E:/Dropbox/fyp16/scratch/src/record/Record.js#Grid#78;E:/Dropbox/fyp16/scratch/src/record/Record.js#Header#84;E:/Dropbox/fyp16/scratch/src/record/Record.js#Image#92;E:/Dropbox/fyp16/scratch/src/record/Record.js#Item#132;E:/Dropbox/fyp16/scratch/src/record/Record.js#Label#110;E:/Dropbox/fyp16/scratch/src/record/Record.js#Link#173;E:/Dropbox/fyp16/scratch/src/record/Record.js#React#7;E:/Dropbox/fyp16/scratch/src/record/Record.js#Segment#60;E:/Dropbox/fyp16/scratch/src/record/Record.js#Statistic#117;</node>
+            <node x="" y="">$PROJECT_DIR$/src/record/RecordList.js#Component#15;E:/Dropbox/fyp16/scratch/src/record/RecordList.js#Container#64;E:/Dropbox/fyp16/scratch/src/record/RecordList.js#Header#56;E:/Dropbox/fyp16/scratch/src/record/RecordList.js#Item#75;E:/Dropbox/fyp16/scratch/src/record/RecordList.js#Link#115;E:/Dropbox/fyp16/scratch/src/record/RecordList.js#React#7;E:/Dropbox/fyp16/scratch/src/record/RecordList.js#Segment#47;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetDiskSpace.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetDiskSpace.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetDiskSpace.js#Header#59;E:/Dropbox/fyp16/scratch/src/settings/SetDiskSpace.js#Link#131;E:/Dropbox/fyp16/scratch/src/settings/SetDiskSpace.js#Progress#67;E:/Dropbox/fyp16/scratch/src/settings/SetDiskSpace.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetDiskSpace.js#Segment#77;E:/Dropbox/fyp16/scratch/src/settings/SetDiskSpace.js#Statistic#86;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetDropbox.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js#Form#67;E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js#Input#73;E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js#Link#132;E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js#Message#80;E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetDropbox.js#Segment#89;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetFaceDetection.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetFaceDetection.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetFaceDetection.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetFaceDetection.js#Dropdown#67;E:/Dropbox/fyp16/scratch/src/settings/SetFaceDetection.js#Form#77;E:/Dropbox/fyp16/scratch/src/settings/SetFaceDetection.js#Link#135;E:/Dropbox/fyp16/scratch/src/settings/SetFaceDetection.js#Message#83;E:/Dropbox/fyp16/scratch/src/settings/SetFaceDetection.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetFaceDetection.js#Segment#92;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetFaceRecognition.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js#Dropdown#67;E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js#Form#77;E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js#Link#135;E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js#Message#83;E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetFaceRecognition.js#Segment#92;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetGmail.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js#Form#67;E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js#Input#73;E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js#Link#132;E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js#Message#80;E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetGmail.js#Segment#89;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetIrFilter.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetIrFilter.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetIrFilter.js#Checkbox#67;E:/Dropbox/fyp16/scratch/src/settings/SetIrFilter.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetIrFilter.js#Form#77;E:/Dropbox/fyp16/scratch/src/settings/SetIrFilter.js#Input#83;E:/Dropbox/fyp16/scratch/src/settings/SetIrFilter.js#Link#142;E:/Dropbox/fyp16/scratch/src/settings/SetIrFilter.js#Message#90;E:/Dropbox/fyp16/scratch/src/settings/SetIrFilter.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetIrFilter.js#Segment#99;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetLogin.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetLogin.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetLogin.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetLogin.js#Form#67;E:/Dropbox/fyp16/scratch/src/settings/SetLogin.js#Input#73;E:/Dropbox/fyp16/scratch/src/settings/SetLogin.js#Link#132;E:/Dropbox/fyp16/scratch/src/settings/SetLogin.js#Message#80;E:/Dropbox/fyp16/scratch/src/settings/SetLogin.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetLogin.js#Segment#89;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetMotionDetection.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetMotionDetection.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetMotionDetection.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetMotionDetection.js#Form#67;E:/Dropbox/fyp16/scratch/src/settings/SetMotionDetection.js#Input#73;E:/Dropbox/fyp16/scratch/src/settings/SetMotionDetection.js#Link#132;E:/Dropbox/fyp16/scratch/src/settings/SetMotionDetection.js#Message#80;E:/Dropbox/fyp16/scratch/src/settings/SetMotionDetection.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetMotionDetection.js#Segment#89;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetPortal.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetPortal.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetPortal.js#Header#59;E:/Dropbox/fyp16/scratch/src/settings/SetPortal.js#Link#116;E:/Dropbox/fyp16/scratch/src/settings/SetPortal.js#List#67;E:/Dropbox/fyp16/scratch/src/settings/SetPortal.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetPortal.js#Segment#73;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetReboot.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetReboot.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetReboot.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetReboot.js#Confirm#67;E:/Dropbox/fyp16/scratch/src/settings/SetReboot.js#Form#76;E:/Dropbox/fyp16/scratch/src/settings/SetReboot.js#Link#134;E:/Dropbox/fyp16/scratch/src/settings/SetReboot.js#Message#82;E:/Dropbox/fyp16/scratch/src/settings/SetReboot.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetReboot.js#Segment#91;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetResetBuzzer.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetResetBuzzer.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetResetBuzzer.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetResetBuzzer.js#Confirm#67;E:/Dropbox/fyp16/scratch/src/settings/SetResetBuzzer.js#Form#76;E:/Dropbox/fyp16/scratch/src/settings/SetResetBuzzer.js#Link#134;E:/Dropbox/fyp16/scratch/src/settings/SetResetBuzzer.js#Message#82;E:/Dropbox/fyp16/scratch/src/settings/SetResetBuzzer.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetResetBuzzer.js#Segment#91;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetVideoCapture.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js#Form#67;E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js#Header#73;E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js#Input#81;E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js#Link#140;E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js#Message#88;E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetVideoCapture.js#Segment#97;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/SetVideoRecording.js#Breadcrumb#47;E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js#Button#59;E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js#Form#67;E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js#Header#73;E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js#Input#81;E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js#Link#140;E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js#Message#88;E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js#React#7;E:/Dropbox/fyp16/scratch/src/settings/SetVideoRecording.js#Segment#97;</node>
+            <node x="" y="">$PROJECT_DIR$/src/settings/Settings.js#Component#15;E:/Dropbox/fyp16/scratch/src/settings/Settings.js#Grid#48;E:/Dropbox/fyp16/scratch/src/settings/Settings.js#Link#94;E:/Dropbox/fyp16/scratch/src/settings/Settings.js#MediaQuery#128;E:/Dropbox/fyp16/scratch/src/settings/Settings.js#Menu#54;E:/Dropbox/fyp16/scratch/src/settings/Settings.js#React#7;</node>
+            <node x="" y="">$PROJECT_DIR$/src/index.css</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/velocity-react/index.js#VelocityTransitionGroup#581;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-router/es/index.js#IndexRoute#471;E:/Dropbox/fyp16/scratch/node_modules/react-router/es/index.js#Link#122;E:/Dropbox/fyp16/scratch/node_modules/react-router/es/index.js#Route#604;E:/Dropbox/fyp16/scratch/node_modules/react-router/es/index.js#Router#66;E:/Dropbox/fyp16/scratch/node_modules/react-router/es/index.js#browserHistory#1246;</node>
+            <node x="" y="">$PROJECT_DIR$/src/index.js#App#163;E:/Dropbox/fyp16/scratch/src/index.js#Face#310;E:/Dropbox/fyp16/scratch/src/index.js#FaceAdd#273;E:/Dropbox/fyp16/scratch/src/index.js#FaceList#234;E:/Dropbox/fyp16/scratch/src/index.js#IndexRoute#106;E:/Dropbox/fyp16/scratch/src/index.js#Login#199;E:/Dropbox/fyp16/scratch/src/index.js#Logout#1160;E:/Dropbox/fyp16/scratch/src/index.js#NotFound#1237;E:/Dropbox/fyp16/scratch/src/index.js#Portal#1198;E:/Dropbox/fyp16/scratch/src/index.js#React#30;E:/Dropbox/fyp16/scratch/src/index.js#ReactDOM#57;E:/Dropbox/fyp16/scratch/src/index.js#Record#386;E:/Dropbox/fyp16/scratch/src/index.js#RecordList#341;E:/Dropbox/fyp16/scratch/src/index.js#Route#99;E:/Dropbox/fyp16/scratch/src/index.js#Router#91;E:/Dropbox/fyp16/scratch/src/index.js#SetDiskSpace#1062;E:/Dropbox/fyp16/scratch/src/index.js#SetDropbox#556;E:/Dropbox/fyp16/scratch/src/index.js#SetFaceDetection#770;E:/Dropbox/fyp16/scratch/src/index.js#SetFaceRecognition#830;E:/Dropbox/fyp16/scratch/src/index.js#SetGmail#604;E:/Dropbox/fyp16/scratch/src/index.js#SetIrFilter#956;E:/Dropbox/fyp16/scratch/src/index.js#SetLogin#512;E:/Dropbox/fyp16/scratch/src/index.js#SetMotionDetection#706;E:/Dropbox/fyp16/scratch/src/index.js#SetPortal#467;E:/Dropbox/fyp16/scratch/src/index.js#SetReboot#1114;E:/Dropbox/fyp16/scratch/src/index.js#SetResetBuzzer#1006;E:/Dropbox/fyp16/scratch/src/index.js#SetVideoCapture#648;E:/Dropbox/fyp16/scratch/src/index.js#SetVideoRecording#894;E:/Dropbox/fyp16/scratch/src/index.js#Settings#423;E:/Dropbox/fyp16/scratch/src/index.js#browserHistory#118;E:/Dropbox/fyp16/scratch/src/index.js#index.css#0;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-document-title/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/jwt-decode/lib/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/semantic-ui-react/dist/es/index.js#Breadcrumb#312;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Button#2592;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Card#7060;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Checkbox#5153;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Confirm#27;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Container#2869;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Divider#2931;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Dropdown#5344;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Form#561;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Grid#1259;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Header#3041;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Icon#3253;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Image#3371;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Input#3494;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Item#8710;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Label#3548;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#List#3742;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Menu#1450;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Message#1710;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Modal#5766;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Progress#6308;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Segment#4442;E:/Dropbox/fyp16/scratch/node_modules/semantic-ui-react/dist/es/index.js#Statistic#9216;</node>
+            <node x="" y="">Flex;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-responsive/dist/react-responsive.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/react.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/reqwest/reqwest.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/storage.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/when/when.js</node>
+            <node x="" y="">../dispatchers/AppDispatcher.js</node>
+            <node x="" y="">../services/RouterContainer</node>
+            <node x="" y="">./BaseStore</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.17407809110629066" x="2019.130841121496" y="2532.6117926394936" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetFaceRecognition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/Settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="77" column="52" lean-forward="true" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/SetPortal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.336a1e08.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="8" column="5492" lean-forward="false" selection-start-line="8" selection-start-column="5492" selection-end-line="8" selection-end-column="5492" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/face/Face.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

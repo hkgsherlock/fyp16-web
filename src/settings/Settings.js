@@ -66,6 +66,16 @@ class Settings extends Component {
                                 <Menu.Item>
                                     <Menu.Header>System</Menu.Header>
                                     <Menu.Menu>
+                                        <Menu.Item name='buzzer' >
+                                            <Link to="/settings/buzzer">
+                                                Buzzer
+                                            </Link>
+                                        </Menu.Item>
+                                        <Menu.Item name='ir-filter' >
+                                            <Link to="/settings/ir-filter">
+                                                IR-Filter
+                                            </Link>
+                                        </Menu.Item>
                                         <Menu.Item name='diskspace'>
                                             <Link to="/settings/diskspace">
                                                 Disk usage and spaces

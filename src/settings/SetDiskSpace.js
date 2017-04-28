@@ -20,7 +20,7 @@ class SetDiskSpace extends Component {
     async reloadStat() {
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/diskusage');
+        result = await fetch('http://pismartcam.local:5000/api/diskusage');
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {

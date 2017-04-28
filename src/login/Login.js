@@ -21,7 +21,7 @@ class Login extends Component {
         e.preventDefault();
         this.setState({waiting: true});
         let result;
-        result = await fetch('http://localhost:5000/api/auth/login', {
+        result = await fetch('http://pismartcam.local:5000/api/auth/login', {
             method: 'POST',
             body: JSON.stringify({
                 uname: this.state.uname,

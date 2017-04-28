@@ -15,7 +15,7 @@ class RecordList extends Component {
     async reloadRecords() {
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/record');
+        result = await fetch('http://pismartcam.local:5000/api/record');
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {
@@ -37,7 +37,7 @@ class RecordList extends Component {
                         {this.state.detects.map(function(e, idx){
                             return (
                                 <Item>
-                                    <Item.Image size='tiny' src={ e.img } />
+                                    <Item.Image size='tiny' src={ e.img ? e.img : './image.png' } />
                                     <Item.Content verticalAlign='middle'>
                                         <Item.Header>
                                             <Link to={"/record/" + e.datetime}>

@@ -23,7 +23,7 @@ class Face extends Component {
 
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/record/' + request_record);
+        result = await fetch('http://pismartcam.local:5000/api/record/' + request_record);
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {
@@ -70,13 +70,17 @@ class Face extends Component {
                     </Header>
                     <Grid stackable>
                         <Grid.Column width="10">
-                            <Image src={this.state.img}
-                                   size='large' />
+                            <Image src={this.state.img && this.state.img.length > 0 ?
+                                this.state.img : '../../image.png' } size='large' />
                         </Grid.Column>
                         <Grid.Column width="6">
-                            <a href={this.state.dropbox_url} target="_blank">
-                                <Button color="blue" content="View on Dropbox" icon="dropbox" />
-                            </a>
+                            {this.state.dropbox_url && this.state.dropbox_url.length > 0 ?
+                                <a href={this.state.dropbox_url} target="_blank">
+                                    <Button color="blue" content="View on Dropbox" icon="dropbox" />
+                                </a>
+                                :
+                                <Button disabled content="(Dropbox link generating)" icon="dropbox" />
+                            }
                             <Header as='h3'>
                                 <Header.Subheader>
                                     Date/Time

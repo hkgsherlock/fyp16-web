@@ -10,6 +10,7 @@
         <item value="selection" />
         <item value="progress" />
         <item value="image" />
+        <item value="toggle" />
       </myValues>
     </inspection_tool>
   </profile>

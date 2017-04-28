@@ -16,7 +16,7 @@ class SetFaceRecognition extends Component {
     async reloadSet() {
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/facerec');
+        result = await fetch('http://pismartcam.local:5000/api/set/facerec');
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {
@@ -31,7 +31,7 @@ class SetFaceRecognition extends Component {
     async save() {
         this.setState({saving: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/facerec', {
+        result = await fetch('http://pismartcam.local:5000/api/set/facerec', {
             method: 'POST',
             body: JSON.stringify({
                 facerec_method: this.state.facerec_method

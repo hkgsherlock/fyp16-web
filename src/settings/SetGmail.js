@@ -23,7 +23,7 @@ class SetGmail extends Component {
     async reloadSet() {
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/gmail');
+        result = await fetch('http://pismartcam.local:5000/api/set/gmail');
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {
@@ -41,7 +41,7 @@ class SetGmail extends Component {
         e.preventDefault();
         this.setState({saving: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/gmail', {
+        result = await fetch('http://pismartcam.local:5000/api/set/gmail', {
             method: 'POST',
             body: JSON.stringify({
                 gmail_url_hostname: this.state.gmail_url_hostname

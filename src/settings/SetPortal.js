@@ -70,6 +70,16 @@ class SetPortal extends Component {
                     System
                 </Header>
                 <List>
+                    <List.Item name='buzzer' >
+                        <Link to="/settings/buzzer">
+                            Buzzer
+                        </Link>
+                    </List.Item>
+                    <List.Item name='ir-filter' >
+                        <Link to="/settings/ir-filter">
+                            IR-Filter
+                        </Link>
+                    </List.Item>
                     <List.Item name='diskspace' >
                         <Link to="/settings/diskspace">
                             Disk usage and spaces

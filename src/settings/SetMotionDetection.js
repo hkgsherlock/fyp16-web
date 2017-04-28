@@ -21,7 +21,7 @@ class SetMotionDetection extends Component {
     async reloadSet() {
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/motion');
+        result = await fetch('http://pismartcam.local:5000/api/set/motion');
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {
@@ -38,7 +38,7 @@ class SetMotionDetection extends Component {
     async save() {
         this.setState({saving: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/motion', {
+        result = await fetch('http://pismartcam.local:5000/api/set/motion', {
             method: 'POST',
             body: JSON.stringify({
                 threshold_low: this.state.threshold_low,

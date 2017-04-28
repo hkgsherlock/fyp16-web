@@ -20,7 +20,7 @@ class SetVideoRecording extends Component {
     async reloadSet() {
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/record');
+        result = await fetch('http://pismartcam.local:5000/api/set/record');
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {
@@ -36,7 +36,7 @@ class SetVideoRecording extends Component {
     async save() {
         this.setState({saving: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/record', {
+        result = await fetch('http://pismartcam.local:5000/api/set/record', {
             method: 'POST',
             body: JSON.stringify({
                 record_width: this.state.record_width,

@@ -8,6 +8,7 @@ import App from './components/App'
 
 import Login from './login/Login';
 import FaceList from './face/FaceList'
+import FaceAdd from './face/FaceAdd'
 import Face from './face/Face'
 import RecordList from './record/RecordList'
 import Record from './record/Record'
@@ -21,6 +22,8 @@ import SetMotionDetection from './settings/SetMotionDetection';
 import SetFaceDetection from './settings/SetFaceDetection';
 import SetFaceRecognition from './settings/SetFaceRecognition';
 import SetVideoRecording from './settings/SetVideoRecording';
+import SetIrFilter from './settings/SetIrFilter';
+import SetResetBuzzer from './settings/SetResetBuzzer';
 import SetDiskSpace from './settings/SetDiskSpace';
 import SetReboot from './settings/SetReboot';
 import Logout from './logout/Logout';
@@ -40,6 +43,7 @@ ReactDOM.render(
         <Route path='/' component={ App } >
             <IndexRoute component={ Portal }/>
             <Route path="face(s)" component={ FaceList }/>
+            <Route path="face-add" component={ FaceAdd }/>
             <Route path="face/:id" component={ Face }/>
             <Route path="record(s)" component={ RecordList }/>
             <Route path="record/:id" component={ Record }/>
@@ -53,6 +57,8 @@ ReactDOM.render(
                 <Route path="face" component={ SetFaceDetection }/>
                 <Route path="facerec" component={ SetFaceRecognition }/>
                 <Route path="record" component={ SetVideoRecording }/>
+                <Route path="buzzer" component={ SetResetBuzzer }/>
+                <Route path="ir-filter" component={ SetIrFilter }/>
                 <Route path="diskspace" component={ SetDiskSpace }/>
                 <Route path="reboot" component={ SetReboot }/>
             </Route>

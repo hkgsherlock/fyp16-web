@@ -22,7 +22,7 @@ class SetDropbox extends Component {
     async reloadSet() {
         this.setState({loading: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/capture');
+        result = await fetch('http://pismartcam.local:5000/api/set/capture');
         let json = await result.json();
         this.setState({loading: false});
         if (result.ok) {
@@ -40,7 +40,7 @@ class SetDropbox extends Component {
     async save() {
         this.setState({saving: true});
         let result;
-        result = await fetch('http://localhost:5000/api/set/capture', {
+        result = await fetch('http://pismartcam.local:5000/api/set/capture', {
             method: 'POST',
             body: JSON.stringify({
                 capture_width: this.state.capture_width,
